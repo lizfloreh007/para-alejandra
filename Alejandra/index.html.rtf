@@ -1,0 +1,465 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="es">\
+<head>\
+	<meta charset="UTF-8" />\
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+	<title>Para Alejandra \uc0\u55357 \u56460 </title>\
+	<style>\
+		:root \{\
+			--rosa: #f9a8d4;\
+			--rosa-fuerte: #ec4899;\
+			--verde: #22c55e;\
+			--azul: #3b82f6;\
+			--blanco: #ffffff;\
+			--fondo-oscuro: #0f172a;\
+		\}\
+\
+		* \{\
+			box-sizing: border-box;\
+		\}\
+\
+		body \{\
+			margin: 0;\
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;\
+			background: radial-gradient(circle at top, #1e293b, #020617);\
+			color: var(--blanco);\
+			min-height: 100vh;\
+		\}\
+\
+		header \{\
+			padding: 1.5rem 2rem;\
+			display: flex;\
+			align-items: center;\
+			justify-content: space-between;\
+			background: rgba(15, 23, 42, 0.85);\
+			backdrop-filter: blur(16px);\
+			border-bottom: 1px solid rgba(148, 163, 184, 0.3);\
+			position: sticky;\
+			top: 0;\
+			z-index: 10;\
+		\}\
+\
+		header h1 \{\
+			margin: 0;\
+			font-size: 1.4rem;\
+			font-weight: 600;\
+			color: var(--rosa);\
+		\}\
+\
+		header span \{\
+			font-size: 0.9rem;\
+			color: #e5e7eb;\
+		\}\
+\
+		main \{\
+			max-width: 960px;\
+			margin: 2rem auto 3rem;\
+			padding: 0 1.5rem;\
+		\}\
+\
+		.hero \{\
+			display: grid;\
+			grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);\
+			gap: 2rem;\
+			align-items: center;\
+		\}\
+\
+		@media (max-width: 800px) \{\
+			.hero \{\
+				grid-template-columns: 1fr;\
+			\}\
+		\}\
+\
+		.card \{\
+			background: radial-gradient(circle at top left, rgba(236, 72, 153, 0.3), rgba(15, 23, 42, 0.95));\
+			border-radius: 1.5rem;\
+			padding: 2rem;\
+			box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);\
+			border: 1px solid rgba(248, 250, 252, 0.12);\
+		\}\
+\
+		.badge \{\
+			display: inline-flex;\
+			align-items: center;\
+			gap: 0.4rem;\
+			padding: 0.25rem 0.75rem;\
+			border-radius: 999px;\
+			background: rgba(56, 189, 248, 0.12);\
+			color: #e0f2fe;\
+			font-size: 0.8rem;\
+			margin-bottom: 0.8rem;\
+		\}\
+\
+		.badge span.heart \{\
+			color: var(--rosa-fuerte);\
+		\}\
+\
+		h2 \{\
+			font-size: 1.8rem;\
+			margin: 0 0 0.8rem;\
+		\}\
+\
+		.highlight-name \{\
+			color: var(--rosa-fuerte);\
+		\}\
+\
+		.subtext \{\
+			color: #cbd5f5;\
+			font-size: 0.98rem;\
+			line-height: 1.7;\
+			margin-bottom: 1.5rem;\
+		\}\
+\
+		.colors-strip \{\
+			display: flex;\
+			gap: 0.5rem;\
+			margin-top: 1rem;\
+			margin-bottom: 1.5rem;\
+		\}\
+\
+		.color-pill \{\
+			flex: 1;\
+			border-radius: 999px;\
+			height: 10px;\
+		\}\
+\
+		.color-rosa \{ background: var(--rosa); \}\
+		.color-verde \{ background: var(--verde); \}\
+		.color-azul \{ background: var(--azul); \}\
+		.color-blanco \{ background: var(--blanco); \}\
+\
+		.btn-row \{\
+			display: flex;\
+			flex-wrap: wrap;\
+			gap: 0.75rem;\
+		\}\
+\
+		.btn \{\
+			display: inline-flex;\
+			align-items: center;\
+			justify-content: center;\
+			padding: 0.6rem 1.3rem;\
+			border-radius: 999px;\
+			border: none;\
+			cursor: pointer;\
+			font-size: 0.95rem;\
+			font-weight: 500;\
+			text-decoration: none;\
+			transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.15s ease;\
+			white-space: nowrap;\
+		\}\
+\
+		.btn-primary \{\
+			background: linear-gradient(135deg, var(--rosa-fuerte), var(--azul));\
+			color: var(--blanco);\
+			box-shadow: 0 10px 30px rgba(236, 72, 153, 0.45);\
+		\}\
+\
+		.btn-primary:hover \{\
+			transform: translateY(-1px);\
+			box-shadow: 0 16px 40px rgba(236, 72, 153, 0.6);\
+		\}\
+\
+		.btn-secondary \{\
+			background: rgba(15, 23, 42, 0.8);\
+			color: #e5e7eb;\
+			border: 1px solid rgba(148, 163, 184, 0.7);\
+		\}\
+\
+		.btn-secondary:hover \{\
+			transform: translateY(-1px);\
+			background: rgba(15, 23, 42, 1);\
+		\}\
+\
+		.meter-container \{\
+			margin-top: 1.2rem;\
+		\}\
+\
+		.meter-label \{\
+			display: flex;\
+			justify-content: space-between;\
+			font-size: 0.8rem;\
+			color: #e5e7eb;\
+			margin-bottom: 0.35rem;\
+		\}\
+\
+		.meter \{\
+			position: relative;\
+			height: 10px;\
+			border-radius: 999px;\
+			background: rgba(15, 23, 42, 0.9);\
+			overflow: hidden;\
+		\}\
+\
+		.meter-fill \{\
+			position: absolute;\
+			inset: 0;\
+			width: 100%;\
+			background: linear-gradient(90deg, var(--rosa), var(--azul), var(--verde));\
+			box-shadow: 0 0 25px rgba(236, 72, 153, 0.8);\
+		\}\
+\
+		.side-card \{\
+			background: linear-gradient(160deg, rgba(59, 130, 246, 0.2), rgba(34, 197, 94, 0.18));\
+			border-radius: 1.5rem;\
+			padding: 1.8rem 1.6rem;\
+			border: 1px solid rgba(191, 219, 254, 0.5);\
+			box-shadow: 0 18px 50px rgba(15, 23, 42, 0.8);\
+		\}\
+\
+		.side-card h3 \{\
+			margin: 0 0 0.75rem;\
+			font-size: 1.1rem;\
+		\}\
+\
+		.promise-list \{\
+			list-style: none;\
+			padding: 0;\
+			margin: 0;\
+			font-size: 0.92rem;\
+			color: #e5e7eb;\
+		\}\
+\
+		.promise-list li \{\
+			display: flex;\
+			align-items: flex-start;\
+			gap: 0.5rem;\
+			margin-bottom: 0.5rem;\
+		\}\
+\
+		.promise-list span.bullet \{\
+			font-size: 1rem;\
+			margin-top: 0.1rem;\
+			color: var(--verde);\
+		\}\
+\
+		.section \{\
+			margin-top: 2.5rem;\
+		\}\
+\
+		.section-title \{\
+			font-size: 1.1rem;\
+			color: #e5e7eb;\
+			margin-bottom: 1rem;\
+			display: inline-flex;\
+			align-items: center;\
+			gap: 0.4rem;\
+		\}\
+\
+		.section-title span.icon \{\
+			color: var(--rosa);\
+		\}\
+\
+		.message-card \{\
+			background: rgba(15, 23, 42, 0.85);\
+			border-radius: 1.25rem;\
+			padding: 1.4rem 1.6rem;\
+			border: 1px solid rgba(148, 163, 184, 0.6);\
+			position: relative;\
+			overflow: hidden;\
+		\}\
+\
+		.message-card::before \{\
+			content: "";\
+			position: absolute;\
+			inset: 0;\
+			background: radial-gradient(circle at top left, rgba(236, 72, 153, 0.25), transparent 55%);\
+			opacity: 0.7;\
+		\}\
+\
+		.message-text \{\
+			position: relative;\
+			font-size: 0.98rem;\
+			line-height: 1.8;\
+			color: #e5e7eb;\
+		\}\
+\
+		.signature \{\
+			margin-top: 1rem;\
+			font-size: 0.9rem;\
+			color: #9ca3af;\
+			font-style: italic;\
+		\}\
+\
+		.signature span.name \{\
+			color: var(--rosa);\
+			font-weight: 500;\
+		\}\
+\
+		.footer \{\
+			text-align: center;\
+			font-size: 0.8rem;\
+			color: #9ca3af;\
+			margin-top: 2.5rem;\
+			padding-bottom: 1.5rem;\
+		\}\
+\
+		.footer span.highlight \{\
+			color: var(--rosa-fuerte);\
+		\}\
+\
+		/* Peque\'f1o detalle animado */\
+		.stars \{\
+			position: fixed;\
+			inset: 0;\
+			pointer-events: none;\
+			opacity: 0.35;\
+			z-index: -1;\
+		\}\
+\
+		.star \{\
+			position: absolute;\
+			width: 2px;\
+			height: 2px;\
+			border-radius: 999px;\
+			background: rgba(248, 250, 252, 0.9);\
+			opacity: 0.6;\
+		\}\
+	</style>\
+</head>\
+<body>\
+	<div class="stars" aria-hidden="true"></div>\
+\
+	<header>\
+		<h1>Para Alejandra</h1>\
+		<span>De alguien que te quiere, desde lejos pero muy cerca \uc0\u55357 \u56491 </span>\
+	</header>\
+\
+	<main>\
+		<section class="hero">\
+			<div class="card">\
+				<div class="badge">\
+					<span class="heart">\uc0\u9829 </span>\
+					<span>Amor a larga distancia</span>\
+				</div>\
+				<h2>Esta p\'e1gina es para ti, <span class="highlight-name">Alejandra</span></h2>\
+				<p class="subtext">\
+					Aunque ahora mismo no podamos estar en el mismo lugar, quiero que esta p\'e1gina\
+					sea como un abrazo en forma de luz, color y palabras.  \
+					Cada vez que entres aqu\'ed, quiero que recuerdes que eres importante, que te pienso\
+					m\'e1s de lo que imaginas y que nuestro amor no entiende de kil\'f3metros.\
+				</p>\
+\
+				<div class="colors-strip" aria-hidden="true">\
+					<div class="color-pill color-rosa"></div>\
+          <div class="color-pill color-verde"></div>\
+					<div class="color-pill color-azul"></div>\
+					<div class="color-pill color-blanco"></div>\
+				</div>\
+\
+				<div class="btn-row">\
+					<button class="btn btn-primary" onclick="scrollToSection('mensaje')">\
+						Leer mi mensaje para ti \uc0\u55357 \u56460 \
+					</button>\
+					<button class="btn btn-secondary" onclick="scrollToSection('promesas')">\
+						Nuestras promesas \uc0\u10024 \
+					</button>\
+				</div>\
+\
+				<div class="meter-container">\
+					<div class="meter-label">\
+						<span>Distancia</span>\
+						<span>Amor</span>\
+					</div>\
+					<div class="meter" aria-hidden="true">\
+						<div class="meter-fill"></div>\
+					</div>\
+				</div>\
+			</div>\
+\
+			<aside class="side-card" id="promesas">\
+				<h3>Peque\'f1as promesas a futuro</h3>\
+				<ul class="promise-list">\
+					<li>\
+						<span class="bullet">\'95</span>\
+						<span>Que esta distancia sea solo un cap\'edtulo, no la historia completa.</span>\
+					</li>\
+					<li>\
+						<span class="bullet">\'95</span>\
+						<span>Guardar momentos, frases y sue\'f1os para cuando podamos contarlos cara a cara.</span>\
+					</li>\
+					<li>\
+						<span class="bullet">\'95</span>\
+						<span>Seguir encontrando formas creativas de decirte \'93te quiero\'94 incluso a trav\'e9s de una pantalla.</span>\
+					</li>\
+					<li>\
+						<span class="bullet">\'95</span>\
+						<span>Cumplir un d\'eda, en persona, todos los \'93alg\'fan d\'eda\'94 que hemos dicho.</span>\
+					</li>\
+				</ul>\
+			</aside>\
+		</section>\
+\
+		<section class="section" id="mensaje">\
+			<div class="section-title">\
+				<span class="icon">\uc0\u55357 \u56460 </span>\
+				<span>Un mensaje para ti</span>\
+			</div>\
+			<div class="message-card">\
+				<div class="message-text">\
+					<p>\
+						Alejandra, esta p\'e1gina existe porque t\'fa existes en mi vida.  \
+						Porque incluso cuando la distancia intenta hacerse grande, tu nombre, tu risa\
+						y cada detalle que te hace \'fanica llenan mi d\'eda de color: rosa, verde, azul y blanco,\
+						como si cada tono fuera una forma distinta de recordarte.\
+					</p>\
+					<p>\
+						No puedo tomar tu mano todav\'eda, pero puedo escribirte, pensarte y construir\
+						peque\'f1os rincones como este donde puedas entrar cuando lo necesites\
+						y encontrar un trocito de la persona que te quiere al otro lado de la pantalla.\
+					</p>\
+					<p>\
+						Gracias por existir, por quedarte, por compartir tu tiempo conmigo incluso\
+						cuando el mundo se empe\'f1a en ponernos kil\'f3metros en medio.  \
+						Prometo que cada d\'eda har\'e9 lo posible porque esta distancia se sienta un poquito\
+						m\'e1s peque\'f1a y tu sonrisa, mucho m\'e1s grande.\
+					</p>\
+\
+					<div class="signature">\
+						Con cari\'f1o,<br />\
+						<span class="name">Liz</span>\
+					</div>\
+				</div>\
+			</div>\
+		</section>\
+\
+		<div class="footer">\
+			Hecho con <span class="highlight">amor</span>, paciencia y un poquito de magia digital \uc0\u10024 \
+		</div>\
+	</main>\
+\
+	<script>\
+		function scrollToSection(id) \{\
+			const el = document.getElementById(id);\
+			if (el) \{\
+				el.scrollIntoView(\{ behavior: 'smooth', block: 'start' \});\
+			\}\
+		\}\
+\
+		// Estrellitas aleatorias de fondo\
+		const starsContainer = document.querySelector('.stars');\
+		if (starsContainer) \{\
+			const starCount = 80;\
+\
+			for (let i = 0; i < starCount; i++) \{\
+				const star = document.createElement('div');\
+				star.className = 'star';\
+				const x = Math.random() * 100;\
+				const y = Math.random() * 100;\
+				star.style.left = x + '%';\
+				star.style.top = y + '%';\
+				star.style.opacity = 0.3 + Math.random() * 0.7;\
+				star.style.transform = 'scale(' + (0.8 + Math.random() * 1.4) + ')';\
+				starsContainer.appendChild(star);\
+			\}\
+		\}\
+	</script>\
+</body>\
+</html>}
